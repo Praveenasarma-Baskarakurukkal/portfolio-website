@@ -87,7 +87,7 @@ export default function Container(props: ContainerProps) {
   const meta = {
     title: "Praveenasarma - Full Stack Developer",
     description: `Full-stack developer with expertise in React, Node.js, and modern web technologies.`,
-    image: "/assets/logo.webp",
+    image: "/favicon.ico",
     type: "website",
     ...customMeta,
   };
