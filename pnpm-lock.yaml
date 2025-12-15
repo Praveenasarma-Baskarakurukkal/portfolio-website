@@ -36,9 +36,6 @@ dependencies:
   '@splinetool/runtime':
     specifier: ^1.0.38
     version: 1.0.38
-  '@t3-oss/env-nextjs':
-    specifier: ^0.7.3
-    version: 0.7.3(typescript@5.3.3)(zod@3.23.8)
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
@@ -1229,33 +1226,6 @@ packages:
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
     dependencies:
       tslib: 2.8.1
-    dev: false
-
-  /@t3-oss/env-core@0.7.3(typescript@5.3.3)(zod@3.23.8):
-    resolution: {integrity: sha512-hhtj59TKC6TKVdwJ0CcbKsvkr9R8Pc/SNKd4IgGUIC9T9X6moB8EZZ3FTJdABA/h9UABCK4J+KsF8gzmvMvHPg==}
-    peerDependencies:
-      typescript: '>=4.7.2'
-      zod: ^3.0.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      typescript: 5.3.3
-      zod: 3.23.8
-    dev: false
-
-  /@t3-oss/env-nextjs@0.7.3(typescript@5.3.3)(zod@3.23.8):
-    resolution: {integrity: sha512-90TNffS17vjkQwfYyMUb4Zw9yqHwFV40f78qFug4JiQa5+N6DydTdlLOpzOcj8Cna/qpAVDwMSypofF/TVQDuA==}
-    peerDependencies:
-      typescript: '>=4.7.2'
-      zod: ^3.0.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@t3-oss/env-core': 0.7.3(typescript@5.3.3)(zod@3.23.8)
-      typescript: 5.3.3
-      zod: 3.23.8
     dev: false
 
   /@types/eslint@8.56.2:
@@ -3855,6 +3825,7 @@ packages:
     resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
     engines: {node: '>=14.17'}
     hasBin: true
+    dev: true
 
   /unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
