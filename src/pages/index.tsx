@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import { motion } from "framer-motion";
-import { ChevronDown, Mail, Github, Linkedin, Phone, MapPin, Award, Star, BookOpen, Database, Trophy, Users } from "lucide-react";
+import { ChevronDown, Mail, Github, Linkedin, Phone, MapPin, Award, Star, BookOpen, Database, Trophy, Users, FileText } from "lucide-react";
 import styles from "@/styles/Home.module.css";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Image from "next/image";
@@ -75,7 +75,7 @@ const certBadges = [
 
 const achievementBadges = [
   { icon: <Trophy className="w-4 h-4 mr-1 text-yellow-400" />, label: "Dean's List - Semester 1 (SGPA 3.85/4.0)" },
-  { icon: <Trophy className="w-4 h-4 mr-1 text-yellow-400" />, label: "Dean's List - Semester 6 (SGPA 4.00/4.0)" },
+  { icon: <Trophy className="w-4 h-4 mr-1 text-yellow-400" />, label: "Dean's List - Semester 6 (SGPA 4.0/4.0)" },
   { icon: <Trophy className="w-4 h-4 mr-1 text-yellow-400" />, label: "First Place - Open Category Mobile Photography (Paws Click 2024)" },
   { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Certificate of Excellence - 2nd Place (MIND Mentoring Program)" },
   { icon: <Star className="w-4 h-4 mr-1 text-yellow-400" />, label: "MAHAPOLA Scholarship Recipient" },
@@ -99,14 +99,16 @@ export default function Home() {
           <h1 className="text-5xl font-bold mb-4 text-gradient clash-grotesk">
             Praveenasarma Baskarakurukkal
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mb-8">
-            Impact-Driven Final Year Undergraduate specializing in Backend Systems and Applied AI Research. 
-            I deliver innovative solutions driven by a passion for continuous learning. 
-            Known for proactive leadership and a powerful "figure-it-out" mindset.
+          <p className="text-lg text-muted-foreground max-w-2xl mb-8 text-justify">
+            Ambitious Final Year Undergraduate specializing in Backend Development and NLP Research. Driven by a passion for continuous learning, I thrive on challenges and collaborating with diverse teams. Known for proactive leadership and a powerful 'figure-it-out' mindset.
             <br /><br />
-            Actively seeking a software engineering role to accelerate growth within a dynamic team.
+            Actively seeking a Software Engineering role to deliver innovative technical solutions.
           </p>
           <div className="flex flex-wrap gap-4 mb-8">
+            <a href="https://drive.google.com/file/d/1AZLe02_EmUVBduIBEKQGdZctEdHXB7jy/view?usp=sharing" target="_blank" rel="noopener noreferrer" className={styles.pill}>
+              <FileText className="h-4 w-4 mr-2" />
+              Resume
+            </a>
             <a href="https://github.com/Praveenasarma-Baskarakurukkal" target="_blank" rel="noopener noreferrer" className={styles.pill}>
               <Github className="h-4 w-4 mr-2" />
               GitHub
@@ -162,18 +164,10 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="my-20 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-gradient clash-grotesk">About Me</h2>
+      {/* About Section (restored without intro paragraph) */}
+      <section id="education" className="my-20 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-gradient clash-grotesk">Education</h2>
         <div className="space-y-6">
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Impact-Driven Final Year Undergraduate specializing in Backend Systems and Applied AI Research. 
-            I deliver innovative solutions driven by a passion for continuous learning. Known for proactive 
-            leadership and a powerful "figure-it-out" mindset. Actively seeking a software engineering role 
-            to accelerate growth within a dynamic team.
-          </p>
-          <div>
-            <h3 className="text-xl font-semibold mb-4">Education</h3>
             <div className="space-y-4">
               <div className="bg-gradient-to-br from-primary/10 to-white/5 rounded-lg p-6 hover:shadow-lg transition-all duration-300">
                 <h4 className="font-bold text-xl text-primary mb-2">BSc (Hons) in Computer Science and Engineering</h4>
@@ -196,7 +190,6 @@ export default function Home() {
                   <p><span className="font-semibold">G.C.E. Ordinary Level:</span> 9A</p>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </section>
@@ -222,8 +215,8 @@ export default function Home() {
             <p className="text-muted-foreground mb-1">The Corridors Academy</p>
             <p className="text-sm text-muted-foreground mb-4">Jan 2025 – Jun 2025</p>
             <ul className="list-disc ml-6 space-y-1 text-muted-foreground">
-              <li>Completed a 6-month mentoring program focused on personal branding, communication, and leadership</li>
-              <li>Awarded Certificate of Excellence and secured 2nd Place in the final cohort evaluation</li>
+              <li>Completed a 6-month mentoring program focused on personal branding, communication, self-discipline and leadership.</li>
+              <li>Awarded the Certificate of Excellence for securing 2nd place in the cohort.</li>
             </ul>
           </div>
         </div>
@@ -251,8 +244,8 @@ export default function Home() {
               <span className="px-2 py-1 rounded-full bg-primary/10 text-primary text-xs flex items-center"><BookOpen className="w-4 h-4 mr-1" />Python</span>
             </div>
             <ul className="list-disc ml-6 space-y-1 text-muted-foreground text-sm">
-              <li>Refined the semantic entropy pipeline for confabulation detection by integrating a finetuned embedding-based similarity technique to enhance accuracy</li>
-              <li>Applied noise perturbation for system stability assessment and implemented Silhouette Score for clustering accuracy</li>
+              <li>Refined the semantic entropy pipeline for confabulation detection by integrating a finetuned embedding-based similarity technique to enhance accuracy.</li>
+              <li>Applied noise perturbation for system stability assessment and implemented Silhouette Score for clustering accuracy.</li>
             </ul>
           </div>
         </div>
@@ -261,23 +254,21 @@ export default function Home() {
         <div className="mb-6">
           <h3 className="text-xl font-semibold text-primary mb-4 flex items-center">
             <Users className="w-5 h-5 mr-2" />
-            Independent Projects
+            Independent Projects (Self-initiated with a peer)
           </h3>
         </div>
         <div className="mb-12">
           <div className={`${styles["project-card"]} hover:shadow-lg hover:scale-105 transition-all duration-300 border-2 border-primary/20`}>
             <h3 className="text-xl font-bold mb-2 flex items-center"><Users className="w-5 h-5 mr-2 text-primary" />UniBridge LK - Mobile Application</h3>
-            <p className="text-sm text-yellow-400 font-semibold mb-3">Ongoing | Nov 2025 - Present</p>
+            <p className="text-sm text-yellow-400 font-semibold mb-3">Independent Project (Self-initiated with a peer) | Nov 2025 – Dec 2025</p>
             <div className="flex flex-wrap gap-2 mb-3">
               <span className="px-2 py-1 rounded-full bg-primary/10 text-primary text-xs flex items-center"><Users className="w-4 h-4 mr-1" />Flutter</span>
               <span className="px-2 py-1 rounded-full bg-primary/10 text-primary text-xs flex items-center"><Database className="w-4 h-4 mr-1" />Firebase</span>
             </div>
-            <p className="text-muted-foreground text-sm mb-3">
-              Developing a mobile app to connect Sri Lankan students with the university community (Self-initiated with a peer).
-            </p>
             <ul className="list-disc ml-6 space-y-1 text-muted-foreground text-sm">
-              <li>Implementing User Profile, Courses directory, Forum threads, and Events list</li>
-              <li>Using serverless backend architecture with Firebase</li>
+              <li>Developed a mobile app to connect Sri Lankan students with the university community.</li>
+              <li>Implemented pages for User Profile, Events, People and hierarchical forum pages.</li>
+              <li>Integrated Firebase Firestore as a serverless backend.</li>
             </ul>
           </div>
         </div>
@@ -292,14 +283,14 @@ export default function Home() {
         <div className="grid gap-8 md:grid-cols-2">
           <div className={`${styles["project-card"]} hover:shadow-lg hover:scale-105 transition-all duration-300`}>
             <h3 className="text-xl font-bold mb-2 flex items-center"><Database className="w-5 h-5 mr-2 text-primary" />Smart Parking System – ParkEase</h3>
-            <p className="text-xs text-muted-foreground mb-3">May 2025 - Jun 2025</p>
+            <p className="text-xs text-muted-foreground mb-3">May 2025 – Jun 2025</p>
             <div className="flex flex-wrap gap-2 mb-3">
               <span className="px-2 py-1 rounded-full bg-primary/10 text-primary text-xs flex items-center"><Users className="w-4 h-4 mr-1" />React</span>
               <span className="px-2 py-1 rounded-full bg-primary/10 text-primary text-xs flex items-center"><Database className="w-4 h-4 mr-1" />MySQL</span>
             </div>
             <ul className="list-disc ml-6 space-y-1 text-muted-foreground text-sm">
-              <li>Developed key modules including admin/security dashboards, booking history, and report generation</li>
-              <li>Implemented validations, real-time report logic, and database design</li>
+              <li>Developed key modules including admin/security dashboards, booking history, and report generation.</li>
+              <li>Implemented validations, real-time report logic, and database design.</li>
             </ul>
           </div>
           <div className={`${styles["project-card"]} hover:shadow-lg hover:scale-105 transition-all duration-300`}>
@@ -319,14 +310,14 @@ export default function Home() {
           </div>
           <div className={`${styles["project-card"]} hover:shadow-lg hover:scale-105 transition-all duration-300`}>
             <h3 className="text-xl font-bold mb-2 flex items-center"><Users className="w-5 h-5 mr-2 text-primary" />Airline Reservation System</h3>
-            <p className="text-xs text-muted-foreground mb-3">Sep 2023 - Nov 2023</p>
+            <p className="text-xs text-muted-foreground mb-3">Sep 2023 – Nov 2023</p>
             <div className="flex flex-wrap gap-2 mb-3">
               <span className="px-2 py-1 rounded-full bg-primary/10 text-primary text-xs flex items-center"><Users className="w-4 h-4 mr-1" />React</span>
               <span className="px-2 py-1 rounded-full bg-primary/10 text-primary text-xs flex items-center"><Database className="w-4 h-4 mr-1" />MySQL</span>
             </div>
             <ul className="list-disc ml-6 space-y-1 text-muted-foreground text-sm">
-              <li>Developed a MySQL-based database for Airline System, handling flight scheduling, bookings, and passenger management</li>
-              <li>Implemented dynamic seat selection, passenger categorization, and ensured data integrity by adhering to ACID properties</li>
+              <li>Developed a MySQL-based database for Airline System, handling flight scheduling, bookings, and passenger management.</li>
+              <li>Implemented dynamic seat selection, passenger categorization, and ensured data integrity by adhering to ACID properties.</li>
             </ul>
           </div>
           <div className={`${styles["project-card"]} hover:shadow-lg hover:scale-105 transition-all duration-300`}>
