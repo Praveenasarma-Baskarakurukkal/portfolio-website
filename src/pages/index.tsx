@@ -56,6 +56,7 @@ const skillBadges = {
     { icon: <Users className="w-4 h-4 mr-1" />, label: "JUnit" },
   ],
   ai: [
+    { icon: <Star className="w-4 h-4 mr-1" />, label: "Copilot" },
     { icon: <Star className="w-4 h-4 mr-1" />, label: "Gemini" },
     { icon: <Star className="w-4 h-4 mr-1" />, label: "ChatGPT" },
     { icon: <Star className="w-4 h-4 mr-1" />, label: "Cursor" },
@@ -66,8 +67,11 @@ const certBadges = [
   { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Fundamentals of Deep Learning (NVIDIA)" },
   { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Software Architecture Foundations (LinkedIn)" },
   { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Programming for Beginners (American Corner)" },
-  { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Makerspace (American Corner)" },
-  { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Python for Beginners (UoM)" },
+    { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Python for Beginners (UoM)" },
+  { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Makerspace Arduino Programming (American Corner)" },
+  { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Communication & Presentation Skills (SLASSCOM)" },
+  { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Amplifier21 Leadership Program (AIESEC)" },
+
   { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Business English (American Corner)" },
   { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Basic 3D Design and Animation (Distinction)" },
   { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "CyberZee'23 quiz competition (UoK)" },
@@ -81,8 +85,6 @@ const achievementBadges = [
   { icon: <Star className="w-4 h-4 mr-1 text-yellow-400" />, label: "MAHAPOLA Scholarship Recipient" },
   { icon: <Star className="w-4 h-4 mr-1 text-yellow-400" />, label: "BOC NANAJAYA Scholarship (Best Performance in A/L)" },
   { icon: <Star className="w-4 h-4 mr-1 text-yellow-400" />, label: "Jinnah Scholarship (Best Performance in A/L)" },
-  { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Communication & Presentation Skills (SLASSCOM)" },
-  { icon: <Award className="w-4 h-4 mr-1 text-primary" />, label: "Amplifier21 Leadership Program (AIESEC)" },
 ];
 
 export default function Home() {
